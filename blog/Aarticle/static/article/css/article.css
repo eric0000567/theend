@@ -1,0 +1,88 @@
+.articleContent {
+	width:90%;
+	padding: 20px;
+	background-color: #ccddcc;
+	border: 2px solid #ffffff;
+	border-radius: 10px;
+}
+
+form#search{
+	margin:0 0 5px 60%;'
+}
+
+p#time{
+	font-size:0.8em;
+}
+
+div#art input#sent{
+	margin:0 0 0 70%;
+}
+div#art{
+	width:60%;
+	margin:0% 15%;
+	text-align: left;
+	padding:2em;
+	background-color:#aaeeee;
+	border: 4px solid #ffffff;
+	border-radius: 10px;
+}
+a#artitle{
+	font-size:1.2em;
+	text-decoration:none;
+	color:blue;
+	font-family: Microsoft JhengHei;
+	
+}
+.commentDiv {
+  margin-top: 1em;
+}
+
+.comment , .commentAuthor{
+  font-size: 0.8em;
+}
+
+.commentAuthor {
+  font-weight: bold;
+  color: #186caf;
+}
+
+.commentTime {
+  font-size: 0.6em;
+  color: #777777;
+}
+input[type=text] {
+  padding: 0.4em;
+}
+/* Table */
+.table {
+  margin: 0 auto;
+  width: 90%;
+  border-collapse: collapse;
+}
+
+.table th {
+  font-size: 1.5em;
+  padding: 10px 0 10px 10px;
+  text-align: left;
+  border-bottom: 1px solid black;
+}
+
+.table td {
+  color: #222222;
+  padding: 12px 0 12px 10px;
+}
+.table-hover tr:hover td {
+  background-color: #ffffff;
+  opacity:0.5;
+}
+
+.like {
+  font-weight: bold;
+  color: #3e7bd1;
+  text-decoration:none;
+}
+
+img#like {
+  vertical-align: middle;
+  width: 1.6em;
+}

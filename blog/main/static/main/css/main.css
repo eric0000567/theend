@@ -1,0 +1,243 @@
+html, body {
+	margin: 0;
+	height: 100%;
+}
+
+body {
+	padding: 0px 25%;
+	background-color:lightblue;
+}
+ul#stu{
+	position:fixed;
+	width:100%;
+	margin:0;
+	bottom:0;
+	right:0;
+	background-color:#8acccc;
+	padding:5px 0px;
+	text-align: center;
+	font-family: Microsoft JhengHei;
+}
+ul#stu li{
+	font-size:1.2em;
+	margin:0em 10%;
+	padding:10px 5px;
+	display: inline-block;
+	text-align: center;
+	font-family: Microsoft JhengHei;
+}
+ul#stu a#ss{
+	font-size:1.5em;
+	text-decoration: none;
+	color:blue;
+	font-family: Microsoft JhengHei;
+	padding:3px;
+	border:2px solid #ffffff;
+}
+
+h2#title{
+	font-size:3em;
+	color:#33aaaa;
+	border-bottom:2px solid #ffffff;
+	font-family: Microsoft JhengHei;
+	padding:3px;
+	
+}
+
+ul#menu {
+	font-size:1.2em;
+	position:fixed;
+	width:32em;
+	margin:0;
+	top:0;
+	right:0;
+	background-color:#8acccc;
+	padding:5px 0px;
+	text-align: right;
+	font-family: Microsoft JhengHei;
+  
+}
+
+ul#menu li {
+	margin:0em 0.5em;
+	padding:0px 5px;
+	width:4em;
+	display: inline-block;
+	text-align: center;
+	font-family: Microsoft JhengHei;
+	border-bottom:2px solid #ffffff;
+  
+}
+
+ul#menu a{
+	text-decoration: none;
+	color:blue;
+	font-family: Microsoft JhengHei;
+}
+
+form#reg{
+	font-size:1.2em;
+	width:20em;
+	margin:10% 35%;
+	background-color:#8acccc;
+	padding:5px 4em;
+	text-align: center;
+	font-family: Microsoft JhengHei;
+	border:2px solid #ffffff;
+	border-radius:15px;
+}
+
+form#login{
+	font-size:1.2em;
+	width:20em;
+	margin:10% 35%;
+	background-color:#8acccc;
+	padding:5px 4em;
+	text-align: center;
+	font-family: Microsoft JhengHei;
+	border:2px solid #ffffff;
+	border-radius:15px;
+}
+
+form#login li{
+	display: inline-block;
+	width:100%;
+	margin:0em;
+	padding:10px 0px;
+	display: inline-block;
+	text-align: center;
+	font-family: Microsoft JhengHei;
+	
+}
+form#login p{
+	margin:0 5px 5px 100%;
+}
+form#reg input#yes{
+	font-size:1.2em;
+	background-color:lightblue;
+	border:2px solid #ffffff;
+	border-radius:5px;
+}
+form#login input#yes{
+	font-size:1.2em;
+	background-color:lightblue;
+	border:2px solid #ffffff;
+	border-radius:5px;
+}
+
+nav#help ul{
+	text-align: center;
+	margin:0% 10% 10% 10%;
+	padding:10px;
+	display: inline-block;
+}
+
+nav#help li{
+	text-align: center;
+	padding:5px;
+	margin:2em;
+	opacity:0.7;
+	width:80%;
+	font-size:2em;
+	display: inline-block;
+}
+
+ul#found{
+	
+}
+
+ul#found li{
+	text-align: center;
+	width:100%;
+	padding:5px;
+	margin:0.5em;
+	opacity:0.7;
+	font-size:2em;
+	display: inline-block;
+}
+
+ul#found a{
+	text-align: center;
+	color: green;
+	text-decoration: none;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+	transition: all 1s ease 0s;
+	transition-property: font-size, color, text-shadow;
+ 	transition-duration: 1s, 1.5s, 2s;
+	
+}
+
+ul#found a:hover {
+ color: blue;
+ text-shadow: -2px -2px -2px gray;
+ font-size: 200%;
+ font-weight: bold;
+ 
+}
+
+nav#help a{
+	text-align: center;
+	color: black;
+	text-decoration: none;
+	transition-property: all;
+	transition-duration: 1s;
+	transition-timing-function: ease;
+	transition-delay: 0s;
+	transition: all 1s ease 0s;
+	transition-property: font-size, color, text-shadow;
+ 	transition-duration: 2s, 3s, 5s;
+}
+
+nav#help a:hover {
+ color: red;
+ text-shadow: -2px -2px -2px gray;
+ font-size: 300%;
+ font-weight: bold;
+ 
+}
+
+/* Button */
+.btn {
+  font-family: Arial;
+  display: inline-block;
+  color: black;
+  font-size: 0.8em;
+  padding: 0.5em 1em;
+  text-decoration: none;
+  border: thin solid gray;
+  border-radius:10px;
+  background: linear-gradient(#f7f7f7, #dedede);
+}
+/* text */
+.stex {
+	padding: 0.5em 0.5em;
+	border: thin solid gray;
+	border-radius:5px;
+}
+
+/* Messages */
+.success, .error {
+  padding: 1em 0 1em 3em;
+}
+
+.success {
+  background-color: #ddffdd;
+  border: thin solid green;
+}
+
+.error {
+  background-color: #fbd9d8;
+  border: thin solid red;
+}
+/* Misc */
+.inlineBlock {
+  display: inline-block;
+}
+
+
+
+
+

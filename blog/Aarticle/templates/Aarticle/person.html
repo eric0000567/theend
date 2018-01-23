@@ -1,0 +1,15 @@
+{% extends "main/base.html" %}
+{% block heading %} 您好，{{ user.username }} {% endblock %}
+{% block content %}
+<h2>需要找什麼？</h2>
+<ul id="found" >
+		<li><a href="{% url 'Aarticle:Aarticle' %}">匿名發問</a></li>
+		<li><a href="{% url 'main:main' %}" >另尋協助</a></li>
+		<li><a href="{% url 'Aarticle:personarticle' %}">我要投稿</a></li>
+		<li><a href="{% url 'account:register' %}">註冊</a></li>
+		<li><a href="{% url 'account:logout' %}">登出</a></li>
+		<li><a href="Email:eric0000567@gamil.com">投訴/意見箱</a></li>
+		
+</ul>
+{% endblock %}
+

@@ -1,0 +1,34 @@
+<!doctype html>
+{% load staticfiles %}
+<html>
+  <head>
+    <title>學生互助網</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="{% static 'main/css/main.css' %}">
+    {% block css %}{% endblock %} 
+  </head>
+  <body>
+	<ul id="menu" >		
+		{% if user.is_authenticated %}
+			<li><a href="{% url 'Aarticle:Aarticle' %}">匿名發問</a></li>
+			<li><a href="{% url 'main:main' %}" >另尋協助</a></li>
+			<li><a href="{% url 'Aarticle:personarticle' %}">我要投稿</a></li>
+			<li><a href="{% url 'Aarticle:person' %}">幫助</a></li>
+			<li><a href="{% url 'account:logout' %}">登出</a></li>
+		{% else %}
+			<li><a href="{% url 'account:register' %}">註冊</a></li>
+			<li><a href="{% url 'account:login' %}">登入</a></li>
+		{% endif %}
+	  </ul>
+    <h2 id="title">{% block heading %}{% endblock %}</h2>
+    {% include 'main/messages.html' %}
+    {% block content %}{% endblock %}
+    <ul id="stu" >
+		<li><a id="ss" href="{% url 'Aarticle:Aarticle' %}">學生互助網</a></li>
+		<li>客服信箱：<a href="">testxxx@gmail.com</a></li>
+		<li>客服電話：0928-222-222</li>
+	</ul>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    {% block script %}{% endblock %}
+  </body>
+</html>

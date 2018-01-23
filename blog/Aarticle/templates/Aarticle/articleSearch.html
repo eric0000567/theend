@@ -1,0 +1,24 @@
+{% extends 'main/base.html' %}
+{% load staticfiles %}
+{% block css %}
+<link rel="stylesheet" href="{% static 'article/css/article.css' %}">
+{% endblock %}
+{% block heading %}搜尋結果{% endblock %}
+{% block content %}
+{% include 'Aarticle/searchForm.html' %}
+{% if not articles %}
+  <p>查無資料</p>
+{% else %}
+<div id="art">
+  <table class="table table-striped table-hover">
+    <tr><th>標題</th><th>發表時間</th></tr>
+    {% for article in articles %}
+    <tr>
+      <td><a id='artitle' href="{% url 'Aarticle:articleRead' article.id %}">{{ article.title }}</a></td>
+      <td>{{ article.pubDateTime|date:'Y-m-d H:i' }}</td>
+    </tr>
+    {% endfor %}
+  </table>
+ </div>
+{% endif %}
+{% endblock %}
